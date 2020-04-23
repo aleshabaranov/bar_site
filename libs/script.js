@@ -1,0 +1,45 @@
+$(document).ready(function() {
+ $('.header_burger').click(function(event) {
+     $('.header_burger,.header_menu').toggleClass('active');
+     $('body').toggleClass('lock')
+ })
+});
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        autoplay:true,
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:2
+            }
+        }
+    });
+  });
+  $(document).ready(function(){
+    $("#owl-carousel2").owlCarousel({
+        autoplay:false,
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+  });
+ 
